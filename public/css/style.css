@@ -1,0 +1,449 @@
+/* MOBILE */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+
+
+#barraHeader{
+    padding: 10px;
+    background-color: #ff3c45;
+}
+
+#headerLogo{
+    width: 20%;
+    padding: 10px;
+
+}
+
+#dropListIcon{
+    position: absolute;
+    width: 15%;
+    right: 0;
+    margin-top: 3%;
+    margin-right: 4%;
+}
+
+#headerNav{
+    border: 4px solid black;
+    border-radius: 15px;
+    display: none;
+    margin: -1%;
+    padding: 40px;
+    padding-top: 0px;
+    height: 400px;
+}
+
+#headerUL{
+    line-height: 80px;;
+    font-family: sans-serif;
+    list-style: none;
+    font-weight: bold;
+    font-size: 65px;
+    color: white;
+}
+
+#headerUL li:hover{
+    color: black;
+}
+
+#bannerHeader{
+    margin-top: -2%;
+    margin-bottom: -1%;;
+}
+
+#bannerHeader img{
+    width: 100%;
+}
+
+/* MAIN */
+
+main{
+    font-family: sans-serif;
+}
+
+#divisaoMainSuperior{
+    background-color: #ff3c45;
+    padding: 50px;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 55px;;
+    display: grid;
+}
+
+#slideCarrossel{
+    padding: 40px;
+}
+
+#carrosselImage{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#tituloCarrossel{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#conteudoCarrossel{
+    text-align: justify;
+    padding: 40px;
+    font-size: 35px;    
+    text-indent: 10%;
+    word-spacing:normal;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+#slideCarrossel button{
+    background-color: #ff3c45;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+#cotacaoBox{
+    /* display: none; */
+    padding: 40px;
+    width: 80%;
+    border: 5px solid #ff3c45;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+
+}
+
+#cotacaoBox form{
+    font-size: 55px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#cotacaoBox input{
+
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 10%;
+
+}
+
+#cotacaoBox p{
+    font-size: 65px;
+    text-align: center;
+}
+
+#cotacaoBox select{
+    font-size: 40px;
+    margin-bottom: 10%;
+
+}
+
+#cotacaoBox option{
+    font-size: 15px;
+}
+
+#cotacaoBox textarea{
+    font-size: 35px;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 10%;
+    font-family: sans-serif;
+
+}
+
+#cotacaoBox button{
+    background-color: #ff3c45;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+}
+#cotacaoBox button:active{
+    color: black;
+}
+
+#escolaBox{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 40px;
+}
+
+#tituloEscolaBox{
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#conteudoEscolaBox{
+    font-family: 'Source Serif Pro', serif;
+    word-spacing:normal;
+    text-align: justify;
+    padding: 40px;
+    font-size: 35px;
+    text-indent: 10%;
+}
+
+#botaoEscolaBox{
+    background-color: #ff3c45;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+}
+
+#botaoEscolaBox:active{
+    color: black;
+}
+
+#quemSomosBox{
+    padding: 40px;
+}
+
+#tituloQuemSomos{
+    text-align: center;
+    font-size: 55px;;
+    display: grid;
+}
+
+#conteudoQuemSomos{
+    font-family: 'Source Serif Pro', serif;
+    word-spacing:normal;
+    text-align: justify;
+    padding: 40px;
+    font-size: 35px;
+    text-indent: 10%;
+}
+
+
+#divisaoFaleConosco{
+    background-color: #ff3c45;
+    padding: 50px;
+    color: white;
+}
+
+h4{
+    font-size: 60px;
+    text-align: center;
+}
+
+#faleConoscoBox{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 40px;
+    width: 80%;
+    border: 5px solid #ff3c45;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#faleConoscoBox form{
+    font-size: 55px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h5{
+    font-size: 65px;
+    text-align: center;
+}
+
+
+#faleConoscoBox input{
+
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 10%;
+
+}
+
+#faleConoscoBox textarea{
+    font-size: 35px;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 10%;
+    font-family: sans-serif;
+
+}
+
+#faleConoscoBox button{
+    background-color: #ff3c45;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+}
+
+#faleConoscoBox button:active{
+    color: black;
+}
+
+#divisaoTrabalheConosco{
+    background-color: #ff3c45;
+    padding: 50px;
+    color: white;
+}
+
+#divisaoTrabalheConosco p{
+    font-size: 60px;
+    text-align: center;
+}
+
+#trabalheConoscoBox{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 40px;
+    width: 80%;
+    border: 5px solid #ff3c45;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#trabalheConoscoBox form{
+    font-size: 55px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h6{
+    font-size: 65px;
+    text-align: center;
+}
+
+#trabalheConoscoBox select{
+    font-size: 40px;
+    margin-bottom: 10%;
+
+}
+
+#trabalheConoscoBox option{
+    font-size: 15px;
+}
+
+#trabalheConoscoBox input{
+
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 10%;
+
+}
+
+#trabalheConoscoBox textarea{
+    font-size: 35px;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 10%;
+    font-family: sans-serif;
+
+}
+
+#trabalheConoscoBox button{
+    background-color: #ff3c45;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+}
+
+#trabalheConoscoBox button:active{
+    color: black;
+}
+
+
+/* FOOTER */
+
+footer{
+    font-family: sans-serif;
+    background-color: #ff3c45;
+    padding: 30px;
+}
+
+#socialMediaBox{
+	display: inline-block;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.socialMediaIcon{
+	padding: 5px;;
+	width: 15%;
+    margin-right: 2%;
+}
+
+.socialMediaIcon:hover{
+    background-color: black;
+    border-radius: 100px;
+}
+
+#linkFooter{
+    
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#linkFooter p{
+    margin: 0;
+}
+
+#linkFooter p:hover{
+    color:black
+}

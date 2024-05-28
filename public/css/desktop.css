@@ -1,0 +1,506 @@
+
+/* DESKTOP */
+@media only screen and (min-width: 992px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* HEADER */
+    
+    #barraHeader{
+        padding: 0px;
+        background-color: #ff3c45;
+        display: flex;
+        padding: 20px;
+    }
+    
+    #headerLogo{
+        width: 10%;
+        padding: 5px;
+
+    
+    }
+    
+    #dropListIcon{
+        display: none;
+    }
+    
+    #headerNav{
+        display: flex;
+        border: 0px;
+        border-radius: 0px;
+        padding: 0px;
+        align-items: center;
+        padding-top: 0px;
+        height: auto;
+        right: 0;
+        margin-right: 4%;
+        margin-top: 0.5%;
+        position: absolute;
+        
+    }
+    
+    #headerUL{
+        line-height: 80px;;
+        font-family: sans-serif;
+        list-style: none;
+        display: flex;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+    }
+    
+    #headerUL li:hover{
+        color: black;
+    }
+
+    #headerUL li{
+        padding: 10px;
+        justify-content: center;
+    }
+    
+    #bannerHeader{
+        margin-top: 0%;
+        margin-bottom: -1%;;
+    }
+    
+    #bannerHeader img{
+        width: 100%;
+    }
+    
+    /* MAIN */
+    
+    main{
+        font-family: sans-serif;
+    }
+    
+    #divisaoMainSuperior{
+        background-color: #ff3c45;
+        padding: 50px;
+        color: white;
+        margin-bottom: 0%;
+    }
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 45px;;
+        display: grid;
+    }
+    
+    #slideCarrossel{
+        padding: 40px;
+    }
+    
+    #carrosselImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 25px;
+    }
+    
+    #tituloCarrossel{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #conteudoCarrossel{
+        margin-top: -2%;
+        text-align: center;
+        padding-right: 150px;
+        padding-left: 150px;
+        font-size: 35px;    
+        text-indent: 5%;
+    
+    
+    }
+    
+    #slideCarrossel button{
+        background-color: #ff3c45;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        
+    }
+
+    #slideCarrossel button:active{
+        color: black;
+    }
+
+    #cotacaoBox{
+        /* display: none; */
+        padding: 40px;
+        width: 60%;
+        border: 5px solid #ff3c45;
+        border-radius: 20px;
+        background-color: white;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+    
+    }
+    
+    #cotacaoBox form{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    #cotacaoBox input{
+    
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 5%;
+        border-radius: 15px;
+    
+    }
+    
+    #cotacaoBox p{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    
+    #cotacaoBox select{
+        font-size: 25px;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        padding: 10px;
+
+    
+    }
+    
+    #cotacaoBox option{
+        font-size: 25px;
+    }
+    
+    #cotacaoBox textarea{
+        font-size: 25px;
+        height: 350px;
+        padding: 20px;
+        margin-bottom: 10%;
+        border-radius: 15px;
+    }
+    
+    #cotacaoBox button{
+        background-color: #ff3c45;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #cotacaoBox button:active{
+        color: black;
+    }
+
+    #escolaBox{
+        padding: 40px;
+    }
+    
+    #tituloEscolaBox{
+        text-align: center;
+        font-size: 45px;;
+        font-weight: bold;
+    }
+    
+    #conteudoEscolaBox{
+        font-family: 'Source Serif Pro', serif;
+        word-spacing:normal;
+        text-align: justify;
+        font-size: 35px;
+        text-indent: 5%;
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    
+    #botaoEscolaBox{
+        background-color: #ff3c45;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #botaoEscolaBox:active{
+        color: black;
+    }
+    
+    #quemSomosBox{
+        margin-top: 5%;
+        padding: 40px;
+    }
+
+    #tituloQuemSomos{
+        text-align: center;
+        font-size: 45px;;
+        display: grid;
+    }
+
+    #conteudoQuemSomos{
+        font-family: 'Source Serif Pro', serif;
+        word-spacing:normal;
+        text-align: justify;
+        font-size: 35px;
+        text-indent: 5%;
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+
+
+    #divisaoFaleConosco{
+        background-color: #ff3c45;
+        padding: 50px;
+        color: white;
+    }
+
+    h4{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h5{
+            font-size: 45px;
+            text-align: center;
+        }
+
+     #faleConoscoBox{
+        /* display: none; */
+        padding: 40px;
+        width: 60%;
+        border: 5px solid #ff3c45;
+        border-radius: 20px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+    
+    }
+    
+    #faleConoscoBox form{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    #faleConoscoBox input{
+    
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 5%;
+        border-radius: 15px;
+    
+    }
+    
+    #faleConoscoBox p{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    
+    #faleConoscoBox textarea{
+        font-size: 25px;
+        height: 350px;
+        padding: 20px;
+        margin-bottom: 10%;
+        border-radius: 15px;
+    }
+    
+    #faleConoscoBox button{
+        background-color: #ff3c45;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #faleConoscoBox button:active{
+        color: black;
+    }
+
+    #divisaoTrabalheConosco{
+        background-color: #ff3c45;
+        padding: 50px;
+        color: white;
+    }
+
+    #divisaoTrabalheConosco p{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h6{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    
+    #trabalheConoscoBox{
+        /* display: none; */
+        padding: 40px;
+        width: 60%;
+        border: 5px solid #ff3c45;
+        border-radius: 20px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+    
+    }
+    
+    #trabalheConoscoBox form{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    #trabalheConoscoBox input{
+    
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 5%;
+        border-radius: 15px;
+    
+    }
+    
+    #trabalheConoscoBox p{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    
+    #trabalheConoscoBox select{
+        font-size: 25px;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        padding: 10px;
+
+    
+    }
+    
+    #trabalheConoscoBox option{
+        font-size: 25px;
+    }
+    
+    #trabalheConoscoBox textarea{
+        font-size: 25px;
+        height: 350px;
+        padding: 20px;
+        margin-bottom: 10%;
+        border-radius: 15px;
+    }
+    
+    #trabalheConoscoBox button{
+        background-color: #ff3c45;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #trabalheConoscoBox button:active{
+        color: black;
+    }
+
+    /* FOOTER */
+
+    footer{
+        font-family: sans-serif;
+        background-color: #ff3c45;
+        padding: 50px;
+    }
+
+    #socialMediaBox{
+        display: inline-block;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .socialMediaIcon{
+        padding:5px;;
+        width: 6%;
+    }
+
+    .socialMediaIcon:hover{
+        background-color: black;
+        border-radius: 60px;
+    }
+
+
+    #linkFooter{
+        
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    #linkFooter p{
+        margin: 0;
+    }
+    
+    #linkFooter p:hover{
+        color: black;
+    }
+
+
+}
+

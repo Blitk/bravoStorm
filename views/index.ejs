@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bravo Storm</title>
+    <link rel="icon" type="image/x-icon" href="images/logoBC.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Bombeiro, Enfermeiro, serviço, Terceirizado, cotação">
+    <meta name="description" content="Empresa de terceirização de serviços de Bombeiro Civil, Enfermagem e Técnica de Segurança do Trabalho.">
+</head>
+<body>
+    <header>
+        <div id="barraHeader">
+            <img id="headerLogo" src="images/logoBC.png">
+
+            <img alt="Banner descritivo" id="dropListIcon" src="images/droplist.png" onclick="changeDropListHeader()">
+            <nav id="headerNav">
+                <ul id="headerUL">
+                    <li onclick="goToNav('faleConoscoBox')">Contato</li>
+                    <li onclick="goToNav('escolaBox')">Estude Conosco</li>
+                    <li onclick="goToCotacao()">Solicitar cotação</li>
+                    <li onclick="goToNav('trabalheConoscoBox')">Trabalhe Conosco</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bannerHeader">
+            <img src="images/banner.png">
+        </div>
+    </header>
+
+    <main>
+        <div id="divisaoMainSuperior">
+            <h1>Conheça um pouco sobre nós:</h1>
+        </div>
+        <section id="slideCarrossel">
+            <h2>Nossos Serviços</h2>
+            <img id="carrosselImage">
+            <p id="tituloCarrossel"></p>
+            <p id="conteudoCarrossel"></p>
+            <!-- <form method="get" action="index.html"> -->
+            <!-- <input name="cotacao" id="tipoCotacao" type="hidden" value=""> -->
+            <button onclick="showCotacao()" type="submit">Solicitar cotação</button>
+        </section>
+        <section id="cotacaoBox">
+            <form name="formCotacao" onsubmit="return false">
+                <p id="tituloCotacaoBox">Solicitação de Cotação</p>
+                <label for="servicoCotacao">Serviço solicitado:</label>
+                <select name="servicoCotacao">
+                    <option id="optBC" value="Bombeiro Civil">Bombeiro Civil</option>
+                    <option id="optEnf" value="Enfermeiro">Enfermeiro</option>
+                    <option id="optTST" value="Técnico de Segurança do Trabalho">Técnico de Segurança do Trabalho</option>
+                </select>
+                <label for="nomeCotacao">Nome:</label>
+                <input name="nomeCotacao" type="text" placeholder="Digite seu nome" required>
+                <label for="emailCotacao">E-Mail:</label>
+                <input name="emailCotacao" type="mail" placeholder="Digite seu E-Mail" required>
+                <label for="celularCotacao">Celular:</label>
+                <input name="celularCotacao" type="text" placeholder="(xx)xxxxx-xxx" required>
+                <label for="detCotacao" >Detalhe a sua cotação:</label>
+                <textarea name="detCotacao" placeholder="Descreva a sua Solicitação"></textarea>
+                <button onclick="verificaCamposCotacao()" >Enviar</button>
+            </form>
+        </section>
+
+        <section id="escolaBox">
+            <p id="tituloEscolaBox">Estude conosco</p>
+            <p id="conteudoEscolaBox">Nós da Bravo Storm oferecemos o Curso de Formação de Bombeiro Civil, um curso completo ministrado por eminentes profissionais.
+
+                Nós nos concentramos em resultados, para que nossos alunos recebam uma orientação muito boa tanto na teoria quanto na prática e possam trabalhar conosco no final do curso.</p>
+            <button id="botaoEscolaBox" type="submit" onclick="showEscola()">Saber mais</button>
+        </section>
+
+        <section id="quemSomosBox">
+            <h3 id="tituloQuemSomos">Quem Somos</h3>
+            <p id="conteudoQuemSomos">A Bravo Storm é uma empresa de terceirização de serviços que oferece soluções chave na mão para o seu negócio com uma equipe de profissionais experientes. Nossa missão é entregar excelência em nosso trabalho e proporcionar aos nossos clientes o melhor desempenho e qualidade. Como Visão, pretendemos ampliar nosso escopo, sempre de olho nas mudanças e inovações que possam ocorrer no mercado. Nossos valores são Ética, Comprometimento, Respeito, Foco, Inteligência e Excelência.</p>
+        </section>
+
+        <div id="divisaoFaleConosco">
+            <h4>Fale Conosco</h4>
+        </div>
+
+        <section id="faleConoscoBox">
+            <h5>Caso tenha uma dúvida:</h5>
+            <form name="formFaleConosco" onsubmit="return false">
+                <label for="assuntoFaleConosco">Assunto:</label>
+                <input name="assuntoFaleConosco" type="text" placeholder="Qual o motivo do seu contato?" required>
+                <label for="nomeFaleConosco">Seu nome:</label>
+                <input type="text" name="nomeFaleConosco" placeholder="Digite o seu nome completo" required>
+                <label for="emailFaleConosco">Seu E-mail:</label>
+                <input type="email" name="emailFaleConosco" placeholder="Digite o seu E-Mail" required>
+                <label for="mensagemFaleConosco">Sua mensagem:</label>
+                <textarea name="mensagemFaleConosco" placeholder="Digite a sua mensagem" minlength="2"></textarea>
+                <button type="submit" onclick="verificaCamposFaleConosco()">Enviar</button>
+                
+            </form>
+        </section>
+
+        <div id="divisaoTrabalheConosco">
+            <p>Faça parte de nossa equipe:</p>
+        </div>
+
+        <section id="trabalheConoscoBox">
+            <h6>Trabalhe Conosco</h6>
+            <form name="formTrabalheConosco" onsubmit="return false">
+                <label for="profissaoTrabalheConosco">Profissão:</label>
+                <select name="profissaoTrabalheConosco">
+                    <option value="Bombeiro Civil">Bombeiro Civil</option>
+                    <option value="Enfermeiro">Enfermeiro</option>
+                    <option value="Técnico de Segurança do Trabalho">Técnico de Segurança do Trabalho</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <label for="experienciaTrabalheConosco">Possui experiência?</label>
+                <select name="experienciaTrabalheConosco">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+                <label for="nomeTrabalheConosco">Seu nome:</label>
+                <input type="text" name="nomeTrabalheConosco" placeholder="Digite o seu nome completo" required>
+                <label for="emailTrabalheConosco">Seu E-mail:</label>
+                <input type="email" name="emailTrabalheConosco" placeholder="Digite o seu E-Mail" required>
+                <label for="celularTrabalheConosco">Celular:</label>
+                <input name="celularTrabalheConosco" type="tel" placeholder="Digite seu celular" required>
+                <label for="CEPTrabalheConosco">CEP:</label>
+                <input name="CEPTrabalheConosco" type="text" placeholder="Qual o seu CEP?" required>
+                <label for="mensagemTrabalheConosco">Informações adicionais:</label>
+                <textarea name="mensagemTrabalheConosco" placeholder="Digite a sua mensagem complementar"></textarea>
+                <button type="submit" onclick="verificaCamposTrabalheConosco()">Enviar</button>
+                
+            </form>
+        
+        </section>
+    </main>
+
+    <footer>
+        <nav id="socialMediaBox">
+			<img onclick='window.open("https://facebook.com")' class="socialMediaIcon" src="images/fb.png">
+			<img onclick='window.open("https://instagram.com")' class="socialMediaIcon" src="images/ig.png">
+			<img onclick="window.open('mailto:faleconosco.bravostorm@gmail.com')" class="socialMediaIcon" src="images/mail.png">
+			<img onclick="window.open('https://web.whatsapp.com/')" class="socialMediaIcon" src="images/wp.png">
+		</nav>
+        <a id="linkFooter" href="https://www.linkedin.com/in/raphael-rodrigues-oliveira-b5675a174"><p>© Copyright 2024 - Raphael Rodrigues Oliveira</p></a>
+    </footer>
+    <script src="js/codes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
