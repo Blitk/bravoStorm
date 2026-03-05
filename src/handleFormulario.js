@@ -9,8 +9,8 @@ module.exports = function handleFormulario(dados){
         secure: false,
         port: 587, 
         auth: {
-            user: "handler.bravostorm@hotmail.com",
-            pass: "BravoStorm2024@"
+            user: "",
+            pass: ""
         }
     }
     let transporter = nodemailer.createTransport(config);
@@ -30,8 +30,8 @@ module.exports = function handleFormulario(dados){
 
 
     let message = {
-        from: 'handler.bravostorm@hotmail.com',
-        to: 'naoresponda.bravostorm@gmail.com', 
+        from: '',
+        to: '', 
         subject:  `[${data}]` + " - " + dados.tipoFormulario ,
         html: htmlForMail, 
         
@@ -44,3 +44,4 @@ module.exports = function handleFormulario(dados){
     }
     );
 }
+
